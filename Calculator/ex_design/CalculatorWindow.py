@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(400, 648)
+        MainWindow.resize(400, 610)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton_7 = QtWidgets.QPushButton(parent=self.centralwidget)
@@ -23,6 +23,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_7.setFont(font)
+        self.pushButton_7.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_7.setObjectName("pushButton_7")
         self.pushButton_8 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_8.setGeometry(QtCore.QRect(100, 190, 100, 100))
@@ -32,6 +40,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_8.setFont(font)
+        self.pushButton_8.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_8.setObjectName("pushButton_8")
         self.pushButton_9 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_9.setGeometry(QtCore.QRect(200, 190, 100, 100))
@@ -41,6 +57,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_9.setFont(font)
+        self.pushButton_9.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_9.setObjectName("pushButton_9")
         self.pushButton_4 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_4.setGeometry(QtCore.QRect(0, 290, 100, 100))
@@ -50,6 +74,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_4.setFont(font)
+        self.pushButton_4.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_4.setObjectName("pushButton_4")
         self.pushButton_5 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_5.setGeometry(QtCore.QRect(100, 290, 100, 100))
@@ -59,6 +91,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_5.setFont(font)
+        self.pushButton_5.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_5.setObjectName("pushButton_5")
         self.pushButton_6 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_6.setGeometry(QtCore.QRect(200, 290, 100, 100))
@@ -68,6 +108,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_6.setFont(font)
+        self.pushButton_6.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_6.setObjectName("pushButton_6")
         self.pushButton_1 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_1.setGeometry(QtCore.QRect(0, 390, 100, 100))
@@ -77,7 +125,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_1.setFont(font)
-        self.pushButton_1.setStyleSheet("")
+        self.pushButton_1.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_1.setObjectName("pushButton_1")
         self.pushButton_2 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(100, 390, 100, 100))
@@ -87,6 +142,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_3 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_3.setGeometry(QtCore.QRect(200, 390, 100, 100))
@@ -96,6 +159,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_3.setFont(font)
+        self.pushButton_3.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_3.setObjectName("pushButton_3")
         self.pushButton_div = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_div.setGeometry(QtCore.QRect(300, 90, 100, 100))
@@ -105,6 +176,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_div.setFont(font)
+        self.pushButton_div.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(255, 151, 57);\n"
+"  color: white; \n"
+"  border: 1px solid gray;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #FF7832, stop: 1 #FF9739);\n"
+"}")
         self.pushButton_div.setObjectName("pushButton_div")
         self.pushButton_zero = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_zero.setGeometry(QtCore.QRect(-1, 490, 201, 100))
@@ -114,6 +195,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_zero.setFont(font)
+        self.pushButton_zero.setStyleSheet("QPushButton {\n"
+"   border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #dadbde, stop: 1 #f6f7fa);\n"
+"}\n"
+"")
         self.pushButton_zero.setObjectName("pushButton_zero")
         self.pushButton_mul = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_mul.setGeometry(QtCore.QRect(300, 190, 100, 100))
@@ -123,6 +212,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_mul.setFont(font)
+        self.pushButton_mul.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(255, 151, 57);\n"
+"  color: white; \n"
+"  border: 1px solid gray;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #FF7832, stop: 1 #FF9739);\n"
+"}")
         self.pushButton_mul.setObjectName("pushButton_mul")
         self.pushButton_minus = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_minus.setGeometry(QtCore.QRect(300, 290, 100, 100))
@@ -132,6 +231,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_minus.setFont(font)
+        self.pushButton_minus.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(255, 151, 57);\n"
+"  color: white; \n"
+"  border: 1px solid gray;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #FF7832, stop: 1 #FF9739);\n"
+"}")
         self.pushButton_minus.setObjectName("pushButton_minus")
         self.pushButton_plus = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_plus.setGeometry(QtCore.QRect(300, 390, 100, 100))
@@ -141,6 +250,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_plus.setFont(font)
+        self.pushButton_plus.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(255, 151, 57);\n"
+"  color: white; \n"
+"  border: 1px solid gray;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #FF7832, stop: 1 #FF9739);\n"
+"}")
         self.pushButton_plus.setObjectName("pushButton_plus")
         self.pushButton_rezult = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_rezult.setGeometry(QtCore.QRect(300, 490, 100, 100))
@@ -150,6 +269,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_rezult.setFont(font)
+        self.pushButton_rezult.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(255, 151, 57);\n"
+"  color: white; \n"
+"  border: 1px solid gray;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #FF7832, stop: 1 #FF9739);\n"
+"}")
         self.pushButton_rezult.setObjectName("pushButton_rezult")
         self.pushButton_clear = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_clear.setGeometry(QtCore.QRect(0, 90, 100, 100))
@@ -159,6 +288,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_clear.setFont(font)
+        self.pushButton_clear.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(215, 215, 215);\n"
+"  border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
+"}")
         self.pushButton_clear.setObjectName("pushButton_clear")
         self.RezultEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
         self.RezultEdit.setGeometry(QtCore.QRect(0, 0, 400, 90))
@@ -168,6 +305,11 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.RezultEdit.setFont(font)
+        self.RezultEdit.setStyleSheet("qproperty-alignment: \'AlignVCenter | AlignRight\';\n"
+"border: 1px solid gray;\n"
+"\n"
+"\n"
+"background-color : white;")
         self.RezultEdit.setObjectName("RezultEdit")
         self.pushButton_point = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_point.setGeometry(QtCore.QRect(200, 490, 100, 100))
@@ -177,6 +319,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_point.setFont(font)
+        self.pushButton_point.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(215, 215, 215);\n"
+"  border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
+"}")
         self.pushButton_point.setObjectName("pushButton_point")
         self.pushButton_plus_minus = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_plus_minus.setGeometry(QtCore.QRect(200, 90, 100, 100))
@@ -186,6 +336,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_plus_minus.setFont(font)
+        self.pushButton_plus_minus.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(215, 215, 215);\n"
+"  border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
+"}")
         self.pushButton_plus_minus.setObjectName("pushButton_plus_minus")
         self.pushButton_delete = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_delete.setGeometry(QtCore.QRect(100, 90, 100, 100))
@@ -195,6 +353,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_delete.setFont(font)
+        self.pushButton_delete.setStyleSheet("QPushButton {\n"
+"  background-color: rgb(215, 215, 215);\n"
+"  border: 1px solid gray;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
+"                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);\n"
+"}")
         self.pushButton_delete.setObjectName("pushButton_delete")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
