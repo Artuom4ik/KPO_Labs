@@ -37,6 +37,7 @@ class MyApp(QMainWindow):
         self.ui.pushButton_rezult.clicked.connect(self.write_rezult)
         self.ui.pushButton_clear.clicked.connect(self.clear_text)
         self.ui.pushButton_delete.clicked.connect(self.delete_last_sumbol)
+        self.ui.pushButton_point.clicked.connect(lambda x: self.write_text("."))
 
     def write_text(self, text):
         self.ui.RezultEdit.setText(self.ui.RezultEdit.text() + text)
@@ -47,6 +48,7 @@ class MyApp(QMainWindow):
         except ZeroDivisionError:
             self.ui.RezultEdit.setText("Деление на ноль!")
         except Exception as e:
+            self.ui.RezultEdit.setText("Неправильный ввод!")
             print(e) #отладка
 
     def delete_last_sumbol(self):
