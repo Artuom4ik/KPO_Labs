@@ -18,6 +18,7 @@ class MyApp(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+
         self.ui.RezultEdit.setReadOnly(True)
 
         self.ui.pushButton_zero.clicked.connect(lambda x: self.write_text(self.ui.pushButton_zero.text()))
@@ -40,7 +41,15 @@ class MyApp(QMainWindow):
         self.ui.pushButton_point.clicked.connect(lambda x: self.write_text("."))
 
     def write_text(self, text):
-        self.ui.RezultEdit.setText(self.ui.RezultEdit.text() + text)
+        symbol = text
+        old_text = self.ui.RezultEdit.text()
+        symbols_do = ["-", "+", "*", "/"]
+
+        if len(old_text) > 0 and old_text[-1] in symbols_do and symbol in symbols_do:
+            old_text = old_text[0 : len(old_text)-1] + symbol
+            self.ui.RezultEdit.setText(old_text)
+        else:
+            self.ui.RezultEdit.setText(old_text + symbol)
 
     def write_rezult(self):
         try:
