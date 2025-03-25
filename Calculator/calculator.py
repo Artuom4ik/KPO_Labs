@@ -1,3 +1,12 @@
+"""
+v.1.0.0
+author: [
+    'Gerasimov Artem',
+    'Shaplavskiy Mikita'
+]
+group: 10701323
+"""
+
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from ex_design import Ui_MainWindow  # Импортируйте сгенерированный класс
