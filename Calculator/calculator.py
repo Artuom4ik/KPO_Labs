@@ -21,15 +21,11 @@ class MyApp(QMainWindow):
         self.ui.RezultEdit.setReadOnly(True)
 
         self.ui.pushButton_zero.clicked.connect(lambda x: self.write_text(self.ui.pushButton_zero.text()))
-        self.ui.pushButton_1.clicked.connect(lambda x: self.write_text(self.ui.pushButton_1.text()))
-        self.ui.pushButton_2.clicked.connect(lambda x: self.write_text(self.ui.pushButton_2.text()))
-        self.ui.pushButton_3.clicked.connect(lambda x: self.write_text(self.ui.pushButton_3.text()))
-        self.ui.pushButton_4.clicked.connect(lambda x: self.write_text(self.ui.pushButton_4.text()))
-        self.ui.pushButton_5.clicked.connect(lambda x: self.write_text(self.ui.pushButton_5.text()))
-        self.ui.pushButton_6.clicked.connect(lambda x: self.write_text(self.ui.pushButton_6.text()))
-        self.ui.pushButton_7.clicked.connect(lambda x: self.write_text(self.ui.pushButton_7.text()))
-        self.ui.pushButton_8.clicked.connect(lambda x: self.write_text(self.ui.pushButton_8.text()))
-        self.ui.pushButton_9.clicked.connect(lambda x: self.write_text(self.ui.pushButton_9.text()))
+
+        for i in range(1,10):
+            button = getattr(self.ui, f"pushButton_{i}")
+            button.clicked.connect(lambda _, b=button: self.write_text(b.text()))
+
         self.ui.pushButton_plus.clicked.connect(lambda x: self.write_text(self.ui.pushButton_plus.text()))
         self.ui.pushButton_minus.clicked.connect(lambda x: self.write_text(self.ui.pushButton_minus.text()))
         self.ui.pushButton_mul.clicked.connect(lambda x: self.write_text("*"))
