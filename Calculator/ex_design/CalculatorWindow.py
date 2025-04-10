@@ -15,8 +15,8 @@ class Ui_MainWindow(object):
         MainWindow.resize(400, 610)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+
         self.pushButton_7 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_7.setGeometry(QtCore.QRect(0, 190, 100, 100))
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -33,7 +33,6 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_7.setObjectName("pushButton_7")
         self.pushButton_8 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_8.setGeometry(QtCore.QRect(100, 190, 100, 100))
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -50,7 +49,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_8.setObjectName("pushButton_8")
         self.pushButton_9 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_9.setGeometry(QtCore.QRect(200, 190, 100, 100))
+
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -67,7 +66,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_9.setObjectName("pushButton_9")
         self.pushButton_4 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(0, 290, 100, 100))
+
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -84,7 +83,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_4.setObjectName("pushButton_4")
         self.pushButton_5 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_5.setGeometry(QtCore.QRect(100, 290, 100, 100))
+
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -101,7 +100,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_5.setObjectName("pushButton_5")
         self.pushButton_6 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_6.setGeometry(QtCore.QRect(200, 290, 100, 100))
+
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -118,7 +117,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_6.setObjectName("pushButton_6")
         self.pushButton_1 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_1.setGeometry(QtCore.QRect(0, 390, 100, 100))
+
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -135,7 +134,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_1.setObjectName("pushButton_1")
         self.pushButton_2 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(100, 390, 100, 100))
+
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -152,7 +151,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_3 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(200, 390, 100, 100))
+
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(18)
@@ -373,6 +372,14 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+
+
+
+
+
+
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

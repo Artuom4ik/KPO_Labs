@@ -9,6 +9,7 @@ group: 10701323
 
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow
+from PyQt6 import QtCore, QtGui, QtWidgets
 from ex_design import Ui_MainWindow  # Импортируйте сгенерированный класс
 
 
@@ -21,6 +22,9 @@ class MyApp(QMainWindow):
         self.ui.RezultEdit.setReadOnly(True)
 
         self.ui.pushButton_zero.clicked.connect(lambda x: self.write_text(self.ui.pushButton_zero.text()))
+
+        for i in range(1, 10):
+            eval(f"self.ui.pushButton_{i}.setGeometry(QtCore.QRect(100*((i-1)%3), 190 + 100*((i-1)//3), 100, 100))")
 
         for i in range(1,10):
             button = getattr(self.ui, f"pushButton_{i}")
