@@ -24,11 +24,11 @@ class CalculatorUI:
         )
 
         buttons = [
-            '(', ')', '%', '+',
-            '7', '8', '9', 'C',
-            '4', '5', '6', '/',
-            '1', '2', '3', '*',
-            '0', '.', '=', '-',
+            'C', '%', 'del', '/',
+            '7', '8', '9', '*',
+            '4', '5', '6', '-',
+            '1', '2', '3', '+',
+            '+-', '0', '.', '=',
         ]
 
         row_val = 1
@@ -38,7 +38,8 @@ class CalculatorUI:
                 self.root,
                 text=button,
                 command=lambda x=button: self.on_button_click(x),
-                font=("Segoe UI Black", 18)
+                corner_radius=10,
+                font=("Segoe UI Black", 18),
             )
             b.grid(
                 row=row_val,
@@ -72,5 +73,12 @@ class CalculatorUI:
             except Exception:
                 ctk.CTkMessageBox.show_error("Error", "Invalid Input!")
                 self.result_var.set("")
+        elif char == 'del':
+            self.result_var.set(self.result_var.get()[:-1])
+        elif char == '+-':
+            if self.result_var.get().startswith('-'):
+                self.result_var.set(self.result_var.get()[1:])
+            else:
+                self.result_var.set('-' + self.result_var.get())
         else:
             self.result_var.set(self.result_var.get() + char)
