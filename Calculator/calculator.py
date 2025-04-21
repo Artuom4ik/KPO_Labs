@@ -23,7 +23,7 @@ class Calculator(ctk.CTk):
 
 
 if __name__ == "__main__":
-    ctk.set_appearance_mode("light")  # Установка темы
-    ctk.set_default_color_theme("blue")  # Установка цветовой темы
+    ctk.set_appearance_mode("system")  # Установка темы
+    ctk.set_default_color_theme("green")  # Установка цветовой темы
     app = Calculator()
     app.mainloop()
