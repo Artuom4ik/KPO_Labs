@@ -1,5 +1,6 @@
 import customtkinter as ctk
 
+from pottern.fabric import Fabric
 
 class CalculatorUI:
     def __init__(self, root, result_var):
@@ -31,6 +32,7 @@ class CalculatorUI:
             '+-', '0', '.', '=',
         ]
 
+        Fabric.button_fabric(None, None)#TODO: ПЕРЕСТИ РАСТАВЛЕНИЕ КНОПОК СЮДА
         row_val = 1
         col_val = 0
         for button in buttons:
