@@ -55,7 +55,7 @@ class Fabric:
             result_var.set(result_var.get()[:-1])
         elif char == '+-':
             if result_var.get().startswith('-'):
-                result_var.set(self.result_var.get()[1:])
+                result_var.set(result_var.get()[1:])
             else:
                 result_var.set('-' + result_var.get())
         else:
