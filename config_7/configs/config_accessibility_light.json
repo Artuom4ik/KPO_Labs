@@ -1,0 +1,32 @@
+{
+  "window": {
+    "width": 500,
+    "height": 700,
+    "title": "Accessible Calculator"
+  },
+  "appearance": {
+    "mode": "light",
+    "color_theme": "blue",
+    "background_color": "#ffffff",
+    "text_color": "#000000",
+    "button_color": "#4682B4",
+    "button_hover_color": "#6495ED"
+  },
+  "font": {
+    "family": "Arial",
+    "size": 28,
+    "button_size": 24
+  },
+  "database": {
+    "enabled": false,
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database_name": "calculator_db"
+  },
+  "interface_type": {
+    "type": "accessibility",
+    "variant": "light"
+  }
+}

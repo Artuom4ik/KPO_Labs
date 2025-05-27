@@ -1,0 +1,32 @@
+{
+  "window": {
+    "width": 450,
+    "height": 650,
+    "title": "Kid's Calculator"
+  },
+  "appearance": {
+    "mode": "light",
+    "color_theme": "green",
+    "background_color": "#e6f7ff",
+    "text_color": "#333333",
+    "button_color": "#32CD32",
+    "button_hover_color": "#00FF00"
+  },
+  "font": {
+    "family": "Comic Sans MS",
+    "size": 26,
+    "button_size": 22
+  },
+  "database": {
+    "enabled": false,
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database_name": "calculator_db"
+  },
+  "interface_type": {
+    "type": "age",
+    "variant": "children"
+  }
+}

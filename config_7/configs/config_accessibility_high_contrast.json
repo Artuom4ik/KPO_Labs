@@ -1,0 +1,32 @@
+{
+  "window": {
+    "width": 500,
+    "height": 700,
+    "title": "High Contrast Calculator"
+  },
+  "appearance": {
+    "mode": "dark",
+    "color_theme": "dark-blue",
+    "background_color": "#000000",
+    "text_color": "#FFFF00",
+    "button_color": "#000080",
+    "button_hover_color": "#0000CD"
+  },
+  "font": {
+    "family": "Arial",
+    "size": 28,
+    "button_size": 24
+  },
+  "database": {
+    "enabled": false,
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database_name": "calculator_db"
+  },
+  "interface_type": {
+    "type": "accessibility",
+    "variant": "high_contrast"
+  }
+}
