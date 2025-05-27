@@ -2,7 +2,7 @@
   "window": {
     "width": 400,
     "height": 600,
-    "title": "Modern Calculator"
+    "title": "Calculator"
   },
   "appearance": {
     "mode": "dark",

@@ -1,6 +1,7 @@
 from states import InitialState
 from operations import BasicOperation, LoggingDecorator, ValidationDecorator, RoundingDecorator
 
+
 class CalculatorModel:
     def __init__(self):
         self.current_value = "0"
@@ -107,4 +108,4 @@ class CalculatorModel:
                 self.equation = f"{self.previous_value} {self.operation} {self.current_value}"
             self.current_value = self.equation
         else:
-            self.equation = self.current_value 
+            self.equation = self.current_value

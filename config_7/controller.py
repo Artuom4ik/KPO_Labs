@@ -18,4 +18,4 @@ class CalculatorController:
 
     def handle_equation_mode_change(self, show_equation):
         self.model.toggle_equation_mode()
-        self.view.update_display(self.model.get_current_value()) 
+        self.view.update_display(self.model.get_current_value())

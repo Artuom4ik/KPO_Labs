@@ -1,6 +1,6 @@
 """
-v.1.0.8
-main_update: configuration system with memory
+v.1.0.7
+main_update: конфигурации для калькулятора
 author: [
     'Herasimau Artsem',
     'Shaplavskiy Mikita'
@@ -27,11 +27,11 @@ class Calculator(ctk.CTk):
     def __init__(self):
         super().__init__()
         
-        # Initialize configuration manager and load settings
+        # Инициализация конфигурационного менеджера и загрузка настроек
         self.config_manager = ConfigManager()
         self.config_manager.load_config()
         
-        # Apply initial configuration
+        # Применение начальной конфигурации
         self.config_manager.apply_config(self)
         
         # Инициализация pygame для звука
@@ -239,13 +239,10 @@ class Calculator(ctk.CTk):
             )
             
             if file_path:
-                # Create a new config manager with the selected file
                 temp_config_manager = ConfigManager(file_path)
                 if temp_config_manager.load_config():
-                    # If successful, update our config manager
                     self.config_manager = temp_config_manager
                     
-                    # Apply the new configuration
                     self.apply_new_config()
         except Exception as e:
             messagebox.showerror("Configuration Error", f"Error loading configuration: {str(e)}")
@@ -253,31 +250,24 @@ class Calculator(ctk.CTk):
     def load_predefined_config(self, config_file):
         """Load a predefined configuration file."""
         try:
-            # Get the directory of this script file
             base_dir = os.path.dirname(os.path.abspath(__file__))
             configs_dir = os.path.join(base_dir, "configs")
             
-            # Create a new config manager with the predefined file
             config_path = os.path.join(configs_dir, config_file)
             temp_config_manager = ConfigManager(config_path)
             if temp_config_manager.load_config():
-                # If successful, update our config manager
                 self.config_manager = temp_config_manager
                 
-                # Apply the new configuration
                 self.apply_new_config()
         except Exception as e:
             messagebox.showerror("Configuration Error", f"Error loading configuration: {str(e)}")
             
     def apply_new_config(self):
         """Apply new configuration immediately."""
-        # Save current configuration for future use
         self.config_manager.save_config()
         
-        # Apply the configuration to the window
         self.config_manager.apply_config(self)
         
-        # Update the view with new configuration
         self.view.update_config(self.config_manager.config)
 
 

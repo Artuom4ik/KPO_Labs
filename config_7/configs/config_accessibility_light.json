@@ -2,7 +2,7 @@
   "window": {
     "width": 500,
     "height": 700,
-    "title": "Accessible Calculator"
+    "title": "Calculator"
   },
   "appearance": {
     "mode": "light",
