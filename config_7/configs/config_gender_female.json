@@ -1,0 +1,32 @@
+{
+  "window": {
+    "width": 400,
+    "height": 600,
+    "title": "Calculator"
+  },
+  "appearance": {
+    "mode": "light",
+    "color_theme": "blue",
+    "background_color": "#fff0f5",
+    "text_color": "#333333",
+    "button_color": "#FF69B4",
+    "button_hover_color": "#FF1493"
+  },
+  "font": {
+    "family": "Arial",
+    "size": 24,
+    "button_size": 20
+  },
+  "database": {
+    "enabled": false,
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database_name": "calculator_db"
+  },
+  "interface_type": {
+    "type": "gender",
+    "variant": "female"
+  }
+}

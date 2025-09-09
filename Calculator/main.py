@@ -1,5 +1,5 @@
 """
-v.1.0.2
+v.1.0.3
 author: [
     'Herasimau Artsem',
     'Shaplavskiy Mikita'
@@ -9,7 +9,9 @@ group: 10701323
 
 import customtkinter as ctk
 from tkinter import StringVar
-from design import CalculatorUI
+from model import CalculatorModel
+from view import CalculatorView
+from controller import CalculatorController
 
 
 class Calculator(ctk.CTk):
@@ -18,8 +20,13 @@ class Calculator(ctk.CTk):
         self.title("Calculator")
         self.geometry("400x600")
 
-        self.result_var = StringVar()
-        self.ui = CalculatorUI(self, self.result_var)
+        # Создаем компоненты MVC
+        self.model = CalculatorModel()
+        self.view = CalculatorView(self)
+        self.controller = CalculatorController(self.model, self.view)
+
+        # Настраиваем обработчики событий
+        self.view.set_button_handlers(self.controller.handle_button_click)
 
 
 if __name__ == "__main__":
